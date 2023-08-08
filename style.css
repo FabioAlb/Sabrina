@@ -142,3 +142,14 @@ main {
     text-align: center;
     position: relative;
 }
+
+.btn-fixed {
+    position: fixed;
+    bottom: 30px;
+    right: 5px;
+    visibility: hidden;
+}
+
+.btn-fixed.visible {
+    visibility: visible;
+}
