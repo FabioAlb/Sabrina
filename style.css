@@ -116,6 +116,11 @@ body {
 .whats {
     max-width: 0.5vw;
     min-width: 2vh;
+    background-color: white;
+}
+
+.whats:hover {
+    background-color: #62ff74;
 }
 
 footer {
