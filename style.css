@@ -56,7 +56,7 @@ header > .logo > h1 {
     flex-direction: row;
     justify-content: space-around;
     padding: 10px;
-    background-image: linear-gradient(to bottom, #022625, #d0d5ce);
+    background-image: linear-gradient(to top, #022625, #d0d5ce);
     border-radius: 0px 0px 30px 30px;
 
 }
