@@ -148,8 +148,8 @@ main {
 
 .btn-fixed {
     position: fixed;
-    bottom: 50px;
-    right: 0px;
+    bottom: 27px;
+    right: 1px;
     visibility: hidden;
 }
 
