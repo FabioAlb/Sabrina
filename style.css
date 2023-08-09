@@ -152,6 +152,12 @@ main {
     visibility: hidden;
 }
 
+#setacima {
+    border-radius: 50px;
+    width: 4vw;
+    min-width: 20px;
+}
+
 
 .btn-fixed.visible {
     visibility: visible;
