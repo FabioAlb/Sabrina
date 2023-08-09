@@ -53,7 +53,7 @@ header > .logo > h1 {
     flex-direction: row;
     justify-content: space-around;
     padding: 10px;
-    background-image: linear-gradient(to bottom, #022625, #d0d5ce);
+    background-image: linear-gradient(to bottom, #022625, #02262585, #d0d5ce);
     border-radius: 0px 0px 60px 60px;
     max-width: 98%;
     height: 35px;
@@ -61,7 +61,7 @@ header > .logo > h1 {
 
 nav > a {
     color: rgb(255, 255, 255);
-    padding: 0px 10px 0px 15px;
+    padding: 0px 5px 0px 5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1em;
 }
