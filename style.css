@@ -92,7 +92,7 @@ nav > a {
 .contatcontainer2 > a {
     padding-top: 30vw;
     color: white;
-    padding: 5px 5px 5px 5px;
+    padding: 5px 15px 5px 15px;
 }
 
 
@@ -103,8 +103,7 @@ body {
 }
 
 .insta {
-    max-width: 0.5vw;
-    min-width: 2vh;
+    max-width: 2.5vh;
     background-color: white;
 
 }
@@ -115,13 +114,21 @@ body {
 }
 
 .whats {
-    max-width: 0.5vw;
-    min-width: 2vh;
+    max-width: 2.5vh;
     background-color: white;
 }
 
 .whats:hover {
     background-color: #62ff74;
+}
+
+.email {
+    max-width: 2.5vh;
+    background-color: white;
+}
+
+.email:hover {
+    background-color: #3498DB;
 }
 
 footer {
