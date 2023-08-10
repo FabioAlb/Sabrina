@@ -153,7 +153,8 @@ main {
 #setacima {
     border-radius: 50px;
     width: 4vw;
-    min-width: 20px;
+    min-width: 30px;
+    max-width: 40px;
 }
 
 
