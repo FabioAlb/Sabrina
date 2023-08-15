@@ -152,7 +152,7 @@ main {
 
 .btn-fixed {
     position: fixed;
-    bottom: 45px;
+    bottom: 55px;
     right: 1px;
     visibility: hidden;
 }
