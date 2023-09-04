@@ -5,12 +5,30 @@
     margin: 0%;
 }
 
+body {
+    margin: auto;
+    background-color: #ffffff;
+    position: relative;
+}
+
 header {
     width: 100%;
-    max-height: 170px;
-    background-color: #022625;
+    max-height: 200px;
+    background-image: linear-gradient(to left, #012D54, #0E4981, #1a4c7a, #194975da, #0f3e6d);
+    background-size: 500% 100%;
     text-align: center;
     box-shadow: 0px 2px 7px 1px #0226253b;
+    animation: degrade-animado 5s infinite alternate;
+}
+
+@keyframes degrade-animado {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
 }
 
 .container {
@@ -20,30 +38,33 @@ header {
     align-items: end;
 }
 
-.logocontainer {
+.headercontainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     color: white;
     text-align: center;
     justify-content: center;
-    padding-top: 5px;
+    padding: 1rem 3rem;    
     min-width: 10vw;
 }
 
 .logo {
-    font-size: 2em;
-    padding: 20px;
-    height: auto;
+    display: flex;
+    padding: 10px; 
+    height: 2rem;
+    align-items: center;
 }
-
+.logo img{
+    min-width: 1.5rem;
+    max-width: 7.5rem;
+}
 header > .logo > h1 {
-    max-width: 20%;
+    max-width: 10%;
 }
 
 .logo > p {
-    font-size: 0.7em;
-
+    font-size: 0.5em;
     padding-bottom: 1px;
     border-radius: -3px -3px;
 }
@@ -51,19 +72,25 @@ header > .logo > h1 {
 .navcontainer {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-around;
     padding: 10px;
-    background-image: linear-gradient(to bottom, #022625, #02262585, #d0d5ce);
-    border-radius: 0px 0px 60px 60px;
     max-width: 98%;
     height: 35px;
+
 }
 
 nav > a {
     color: rgb(255, 255, 255);
     padding: 0px 5px 0px 5px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4em;
+}
+
+.navcontainer2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navcontainer2 > a:hover {
@@ -71,6 +98,73 @@ nav > a {
     border-radius: 2px 5px;
     color: white;
     font-weight: bold;
+}
+.mobile-menu-icon{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+    text-decoration: none;
+}
+.container-menu ul{
+    display: none;
+}
+.mobile-menu ul{
+    text-decoration: none;
+}
+.nav-item{
+    display: block;
+    text-decoration: none;
+    padding-top: 3px;
+}
+.nav-link{
+    text-decoration: none;
+    color: #D0D5CE;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media screen and (max-width: 730px){
+    .headercontainer{
+        padding: 0.5rem 3rem;
+    }
+    .navcontainer2{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding-left: 10px;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+    }
+    .container-menu .nav-item{
+        display: block;
+    }
+    .open{
+    display: block;
+}
+    .btn-nocturne{
+        display: none;
+    }
+    
+}
+.btn-nocturne button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.btn-nocturne button img{
+    width: 60%;
+    padding: 0.5rem 0.5rem;
 }
 
 .contatcontainer {
@@ -84,6 +178,7 @@ nav > a {
 .contatcontainer2 {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
     border-radius: 0px 0px 60px 60px;
     width: 150px;
@@ -93,13 +188,6 @@ nav > a {
     padding-top: 30vw;
     color: white;
     padding: 5px 15px 5px 15px;
-}
-
-
-body {
-    margin: auto;
-    background-color: #d0d5ce;
-    position: relative;
 }
 
 .insta {
@@ -125,6 +213,10 @@ body {
 .email {
     max-width: 2.5vh;
     background-color: white;
+}
+
+.email > img {
+    max-width: 2vw;
 }
 
 .email:hover {
