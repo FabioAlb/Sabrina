@@ -44,14 +44,14 @@ header {
     align-items: center;
     color: white;
     text-align: center;
-    justify-content: center;
-    padding: 1rem 3rem;    
+    justify-content: space-between;
+    padding: 0.5rem 0.5rem;    
     min-width: 10vw;
 }
 
 .logo {
     display: flex;
-    padding: 10px; 
+    padding: 5px; 
     height: 2rem;
     align-items: center;
 }
@@ -68,7 +68,6 @@ header > .logo > h1 {
     padding-bottom: 1px;
     border-radius: -3px -3px;
 }
-
 .navcontainer {
     display: flex;
     flex-direction: row;
@@ -124,13 +123,22 @@ nav > a {
 }
 @media screen and (max-width: 730px){
     .headercontainer{
-        padding: 0.5rem 3rem;
+        padding: 0rem 0rem;
+    }
+    .nav-list{
+        padding-left: 0%;
+    }
+    .navcontainer{
+        display: none;
     }
     .navcontainer2{
         display: none;
     }
     .mobile-menu-icon{
         display: block;
+    }
+    .icon{
+        padding-top: 3px;
     }
     .mobile-menu-icon button{
         background-color: transparent;
@@ -197,7 +205,7 @@ nav > a {
 }
 
 .insta:hover {
-    background-image: linear-gradient(to top left, #FFB541, #FDA824, #FF8403, #FF6601, #FD2832, #FF0961, #CB1BA0, #AB35BF, #1A67E3);
+    background-image: linear-gradient(to top left, #FFB541, #FDA824, #FF8403, #FF6601, #fd2832, #FF0961, #CB1BA0, #AB35BF, #1A67E3);
     transition-duration: 1s;
 }
 
@@ -212,7 +220,7 @@ nav > a {
 
 .email {
     max-width: 2.5vh;
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .email > img {
